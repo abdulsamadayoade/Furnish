@@ -3,4 +3,4 @@
  
  The project is built using HTML, CSS and Javascript.
  
- Link to the website: hhtps://abdulsamadayoade.github.io/Furnish
+ Link to the website: https://abdulsamadayoade.github.io/Furnish
