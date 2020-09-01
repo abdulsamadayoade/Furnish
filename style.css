@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TheGwatmey";
+    src: url('textfonts/TheGwathmey.woff') format('woff');
+}
+
+@font-face {
+    font-family: "EBGaramondItalic";
+    src: url('textfonts/EBGaramond-Italic.woff') format('woff');
+}
+
+html {
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #1d1d1d;        
+}
+
+.container,
+.small-container,
+.medium-container {
+    width: 100%;
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.small-container {
+    max-width: 100rem;
+}
+
+.medium-container {
+    max-width: 120rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+
+.logo img {
+    width: 13rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 3.5rem;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+nav + div svg:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.timeless {
+    font-size: 5rem;
+    color: #f42153;
+    font-family: "TheGwatmey";
+    font-weight: normal;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-color: #f2f0f1;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 30rem;
+}
+
+.hero-info {
+    flex-basis: 50%;
+    align-self: flex-start;
+    padding: 12rem 0;
+    min-width: 30rem;
+}
+
+.hero-image {
+    min-width: 30rem;
+}
+
+.col-2 img,
+.hero-image img {
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin: 2rem 0;
+}
+
+.hero p,
+.offer p {
+    font-size: 1.9rem;
+    color: #4c4c43;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    border: .1rem solid #4c4c43;
+    padding: 1.2rem 2.2rem;
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+    font-family: "EBGaramondItalic";
+}
+
+/* FEATURED CATEGORIES */
+
+.categories {
+    margin: 10rem 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 25rem;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+/* FEATURED CATEGORIES */
+
+.featured {
+    margin: 10rem 0;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 20rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    transition: transform .5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin: 15rem auto 7rem;
+    line-height: 1.8;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: .5rem;
+    width: 10rem;
+    background-color: #f42153;
+    border-radius: .5rem;
+}
+
+h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.3rem;
+    color: #1d1d1d;
+    margin: .8rem 0;
+}
+
+.col-4 p {
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
+
+.rating .fas {
+    color: #f42153;
+    font-size: 1.4rem;
+}
+
+.col-4:hover {
+    transform: translateY(-.5rem);
+}
+
+/* LASTEST PRODUCTS */
+
+small {
+    font-family: "EBGaramondItalic";
+    color: #4c4c43;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+}
+
+.latest-products h2 {
+    margin: 0;
+    margin: 1.5rem 0 7rem;
+}
+
+/* OFFER */
+
+.offer {
+    margin: 5rem 0;
+    background-color: #e3ebf0;
+    margin-top: 8rem;
+    padding: 5rem 0;
+}
+
+.offer .col-2:last-child {
+    padding-left: 5rem;
+}
+
+.offer small {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.offer h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    padding-top: 10rem;
+}
+
+.testimonials .col-3 {
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 2rem 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonials .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials .col-3 img {
+    width: 5rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.fas.fa-quote-left {
+    font-size: 3.4rem;
+    color: #f42153;
+}
+
+.col-3 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1.2rem 0;
+    color: #777;
+}
+
+.testimonials .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
