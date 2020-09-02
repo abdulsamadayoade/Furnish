@@ -437,6 +437,7 @@ select {
     padding: .6rem;
     border: .1rem solid #555;
     outline: none;
+    background: transparent;
 }
 
 .pagination span {
