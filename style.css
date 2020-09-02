@@ -68,12 +68,21 @@ a {
 
 .navbar ul li {
     margin-right: 3.5rem;
+    padding-bottom: .5rem;
 }
 
 .navbar a {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+nav a {
+    transition: opacity .3s;
+}
+
+nav a:hover {
+    opacity: .6;
 }
 
 nav + div svg:not(:last-child) {
@@ -143,17 +152,34 @@ h1 {
     margin-top: 1.5rem;
     font-size: 1.9rem;
     font-family: "EBGaramondItalic";
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #4c4c43;
+    color: #f2f0f1;
+}
+
+.navbar svg {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 2.6rem;
+    margin-left: 2rem;
+    display: none;
 }
 
 /* FEATURED CATEGORIES */
 
 .categories {
-    margin: 10rem 0;
+    margin: 7rem 0;
 }
 
 .col-3 {
     flex-basis: 30%;
     min-width: 25rem;
+    margin-bottom: 3rem;
 }
 
 .col-3 img {
@@ -178,10 +204,13 @@ h1 {
     width: 100%;
 }
 
-.title {
+h2 {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
+}
+
+.title {
     text-align: center;
     margin: 15rem auto 7rem;
     line-height: 1.8;
@@ -244,7 +273,7 @@ small {
     margin: 5rem 0;
     background-color: #e3ebf0;
     margin-top: 8rem;
-    padding: 5rem 0;
+    padding: 7rem 0 5rem;
 }
 
 .offer .col-2:last-child {
@@ -305,4 +334,218 @@ small {
     color: #555;
     font-size: 1.6rem;
     margin-top: 1rem;
+}
+
+/* BRAND */
+
+.brands,
+.assurance {
+    margin: 10rem auto;
+}
+
+.col-5 {
+    width: 16rem;
+}
+
+.col-5 img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 6rem 0 2rem;
+    background-color: #f2f0f1;
+}
+
+footer h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2.2rem;
+}
+
+footer p,
+footer a {
+    font-size: 1.7rem;
+    color: rgb(139, 134, 134);
+}
+
+footer a {
+    display: inline-block;
+    margin-bottom: 1.7rem;
+    transition: color .3s;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 25rem;
+    margin-bottom: 2rem;
+}
+
+footer img {
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.row {
+    align-items: flex-start;
+}
+
+.footer-inner {
+    height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_icons {
+    font-size: 1.9rem;
+}
+
+.social_link {
+    margin-right: 1.4rem;
+    transition: color .3s;
+}
+
+.social_link:hover {
+    color: var(--primary-color);
+}
+
+.attribute p {
+    font-size: 1.7rem;
+}
+
+/* SHOP PAGE */
+/* This is the shop page which contains all the products */
+
+.row-2 {
+    justify-content: space-between;
+    margin: 10rem auto 5rem;
+}
+
+select {
+    padding: .6rem;
+    border: .1rem solid #555;
+    outline: none;
+}
+
+.pagination span {
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 1px solid #555;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.pagination span:hover {
+    background-color: #f42153;
+    border-color: #f42153;
+    color: #fff;
+}
+
+/* ASSURANCE SECTION */
+
+.assurance .col-4:hover {
+    transform: translateY(0);
+}
+
+.assurance img {
+    width: 5rem;
+}
+
+.assurance p {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: var(--primary-color);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+
+    .navbar nav ul {
+        display: inline-block;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        background-color: #4c4c43;;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar nav ul li {
+        display: block;
+        margin: 1rem 5rem 1.5rem 0rem;
+        text-align: right;
+    }
+
+    .navbar a {
+        color: #e3ebf0;
+    }
+
+    .navbar ul li::after {
+        display: none;
+    }
+
+    .navbar svg {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .footer-col-1 p {
+        line-height: 1.4;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .offer .col-2:last-child {
+        padding-left: 0;
+        margin-top: 5rem;
+    }
+
+    .offer small {
+        text-align: center;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+
+    .attribute p {
+        text-align: center;
+        line-height: 1.4;
+    }
 }
