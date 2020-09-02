@@ -4,22 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reno - Furniture Store</title>
+    <title>Furnish - Furniture & Interior Decoration</title>
     <link rel="stylesheet" href="fonts/css/all.min.css">
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+
     <header>
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
+                        <li><a href="/shop.html">Shop</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
                         <li><a href="">Portfolio</a></li>
@@ -46,6 +51,7 @@
                             </path>
                         </g>
                     </svg>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
                 </div>
             </div>
         </div>
@@ -319,6 +325,81 @@
             </div>
         </div>
     </section>
+
+    <!-- BRANDS SECTION -->
+    <section class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/brand-1.jpg" alt="brand">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-2.jpg" alt="brand">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-3.jpg" alt="brand">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-4.jpg" alt="brand">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-5.jpg" alt="brand">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo.png" alt="logo">
+                    <p>Sophisticated simplicity for the
+                        independent mind.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instgram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-inner">
+                <div class="social_icons">
+                    <a class="social_link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social_link" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social_link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="social_link" href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="attribute">
+                    <p>Designed &amp; Built by AbdulSamad Ayoade</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
