@@ -280,7 +280,8 @@ small {
     padding-left: 5rem;
 }
 
-.offer small {
+.offer small,
+.single-product small {
     text-align: left;
     margin-bottom: 1.5rem;
 }
@@ -478,6 +479,92 @@ select {
     color: var(--primary-color);
 }
 
+/* SINGLE PRODUCT PAGE */
+
+.single-product {
+    margin-top: 7rem;
+}
+
+.single-product h1 {
+    font-size: 4rem;
+}
+
+.single-product p {
+    font-size: 1.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 2rem;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.single-product select {
+    color: var(--primary-color);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border: .1rem solid #ddd;
+    padding: .5rem 2rem;
+    font-size: 1.9rem;
+    font-family: "Josefin Sans", sans-serif;
+    height: 5.5rem;
+}
+
+.single-product .btn {
+    margin: 0;
+    margin-bottom: 2rem;
+    height: 5.5rem;
+}
+
+.wish {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-family: "EBGaramondItalic";
+}
+
+.wish svg {
+    margin-right: 1rem;
+}
+
+.other-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.other-details h4 {
+    margin: 1rem 0;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.other-details span {
+    font-family: "EBGaramondItalic";
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #777;
+    text-transform: capitalize;
+    margin-left: 1.5rem;
+}
+
+.view-more {
+    font-size: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
@@ -548,5 +635,21 @@ select {
     .attribute p {
         text-align: center;
         line-height: 1.4;
+    }
+
+    .single-product .row {
+        text-align: left;
+    }
+
+    .single-product .col-2 {
+        padding: 2rem 0;
+    }
+
+    .single-product h1 {
+        font-size: 2.5rem;
+    }
+
+    .view-more {
+        display: none;
     }
 }
