@@ -426,8 +426,7 @@ footer img {
     font-size: 1.7rem;
 }
 
-/* SHOP PAGE */
-/* This is the shop page which contains all the products */
+/*                        SHOP PAGE                        */
 
 .row-2 {
     justify-content: space-between;
@@ -479,7 +478,9 @@ select {
     color: var(--primary-color);
 }
 
-/* SINGLE PRODUCT PAGE */
+
+
+/*                          SINGLE PRODUCT PAGE                       */
 
 .single-product {
     margin-top: 7rem;
@@ -563,6 +564,88 @@ select {
 
 .view-more {
     font-size: 2rem;
+}
+
+
+/*                          ACCOUNT PAGE                       */
+
+.account {
+    padding: 5rem 0;
+    background-color: #f2f0f1;
+}
+
+.form-container {
+    font-size: 2rem;
+    background-color: #fff;
+    width: 30rem;
+    height: 40rem;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+    margin: auto;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-container span {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 1rem;
+    color: #555;
+    cursor: pointer;
+    width: 10rem;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 30rem;
+    padding: 0 2rem;
+    position: absolute;
+    top: 13rem;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 3.5rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    outline: none;
+}
+
+#LoginForm {
+    left: -30rem;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 1.5rem;
+}
+
+#Indicator {
+    width: 10rem;
+    border: none;
+    background-color: #4c4c43;
+    height: .3rem;
+    margin-top: .8rem;
+    transform: translateX(10rem);
+    transition: transform 1s;
 }
 
 /* MEDIA QUERIES */
