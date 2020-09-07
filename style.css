@@ -60,6 +60,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
+    position: relative;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -604,15 +606,16 @@ select {
     max-width: 30rem;
     padding: 0 2rem;
     position: absolute;
-    top: 13rem;
+    top: 12rem;
     transition: transform 1s;
 }
 
 form input {
+    font-size: 1.6rem;
     width: 100%;
     height: 3.5rem;
-    margin: 1rem 0;
-    padding: 0 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem 1rem;
     border: 1px solid #ddd;
     outline: none;
     font-family: "Josefin Sans", sans-serif;
@@ -733,6 +736,10 @@ form a {
     }
 
     .view-more {
+        display: none;
+    }
+
+    .account .col-2:first-child {
         display: none;
     }
 }
