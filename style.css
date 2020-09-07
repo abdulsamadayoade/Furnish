@@ -604,7 +604,7 @@ select {
     max-width: 30rem;
     padding: 0 2rem;
     position: absolute;
-    top: 12rem;
+    top: 11rem;
     transition: transform 1s;
 }
 
@@ -613,7 +613,7 @@ form input {
     width: 100%;
     height: 3.5rem;
     margin: 1.5rem 0;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
     border: 1px solid #ddd;
     outline: none;
     font-family: "Josefin Sans", sans-serif;
