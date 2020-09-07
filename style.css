@@ -661,6 +661,7 @@ form a {
         background-color: #4c4c43;;
         width: 100%;
         overflow: hidden;
+        z-index: 100;
     }
 
     .navbar nav ul li {
