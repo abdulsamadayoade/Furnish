@@ -3,12 +3,13 @@
  
  The project is built using HTML, CSS and Javascript.
  
- It contains five pages which are:
+ It contains five major pages which are:
  
  1. The Homepage
- 2. The Products Page
+ 2. Shop
  3. Contact
  4. Account
  5. Cart
+ And Individual Page For Each Product
  
  Link to the website: https://abdulsamadayoade.github.io/Furnish
