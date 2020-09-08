@@ -737,4 +737,8 @@ form a {
     .view-more {
         display: none;
     }
+    
+    .account .col-2:first-child {
+        display: none;
+    }
 }
