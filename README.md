@@ -1,5 +1,8 @@
 # Furnish
- Furnish is an ecommerce theme built for a fictional furniture and interior decoration agency.
+
+ <img src="images/screenshot.jpg" alt="project">
+
+ Furnish is a simple nd clean ecommerce theme built for a fictional furniture business.
  
  The project is built using HTML, CSS and Javascript.
  
@@ -8,6 +11,9 @@
  1. Homepage
  2. Shop
  3. Account
+ 4. About
+ 5. Contact
+
  And Individual Page For Each Product
  
  Link to the website: https://abdulsamadayoade.github.io/Furnish
