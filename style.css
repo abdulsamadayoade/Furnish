@@ -60,14 +60,14 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
+    height: 7rem;
 }
 
-.navbar ul {
+.nav-list {
     display: flex;
-    align-items: center;
 }
 
-.navbar ul li:not(:last-child) {
+.nav-list li:not(:last-child) {
     margin-right: 5rem; 
 }
 
@@ -77,16 +77,24 @@ a {
     letter-spacing: 1.5px;
 }
 
-nav a {
+.navbar a {
     transition: opacity .3s;
 }
 
-nav a:hover {
+.navbar a:hover {
     opacity: .6;
 }
 
-nav + div svg:not(:last-child) {
+.navbar div svg:not(:last-child) {
     margin-right: 1.5rem;
+}
+
+.menu-toggle {
+    font-size: 2.2rem;
+    color: #ddd;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
 }
 
 .timeless {
@@ -656,38 +664,59 @@ form a {
 
 @media only screen and (max-width: 800px) {
 
-    .navbar nav ul {
-        display: inline-block;
-        position: absolute;
-        top: 7rem;
-        left: 0;
-        background-color: #4c4c43;;
-        width: 100%;
-        overflow: hidden;
-        z-index: 100;
+   .menu-toggle {
+       display: block;
+   }
+
+   .fa-bars {
+       color: var(--primary-color);
+   }
+
+   .fa-times {
+       display: none;
+   }
+
+   .nav-list {
+       background-color: #4c4c43;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       min-height: 100vh;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       transform: translateY(-100%);
+       transition: transform .5s;
+       z-index: 100;
+   }
+
+   .nav-list li:not(:last-child) {
+        margin-right: 0; 
     }
 
-    .navbar nav ul li {
+    .menu-toggle.show .fa-bars {
+        display: none;
+    }
+
+    .menu-toggle.show .fa-times {
         display: block;
-        margin: 1rem 5rem 1.5rem 0rem;
-        text-align: right;
+    }
+
+    .nav-list.show {
+        transform: translateY(0);
     }
 
     .navbar a {
         color: #e3ebf0;
     }
 
-    .navbar ul li::after {
-        display: none;
+    .logo {
+        color: var(--primary-color) !important;
     }
 
     .navbar svg {
         display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
     }
 
     .footer-col-1 p {
