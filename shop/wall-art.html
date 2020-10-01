@@ -7,7 +7,7 @@
     <title>Shop - Wall Art</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../fonts/css/all.min.css">
-    <script src="app.js" defer></script>
+    <script src="../app.js" defer></script>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -18,15 +18,13 @@
         <div class="container">
             <div class="navbar">
                 <a class="logo" href="../index.html">Furnish</a>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../shop.html">Shop</a></li>
-                        <li><a href="../account.html">Account</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../shop.html">Shop</a></li>
+                    <li><a href="../account.html">Account</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -48,7 +46,10 @@
                             </path>
                         </g>
                     </svg>
-                    <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
         </div>
