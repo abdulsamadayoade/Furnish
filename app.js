@@ -1,3 +1,13 @@
+// MENU TOGGLE
+const myMenu = document.querySelector('.menu-toggle');
+const myList = document.querySelector('.nav-list');
+
+myMenu.addEventListener('click', () => {
+    myMenu.classList.toggle('show');
+    myList.classList.toggle('show');
+});
+
+// LOGIN AND SIGN UP FORM SLIDER
 var LoginForm = document.getElementById("LoginForm");
 var RegForm = document.getElementById("RegForm");
 var Indicator = document.getElementById("Indicator");
