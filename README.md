@@ -2,7 +2,7 @@
 
  <img src="images/screenshot.png" alt="project">
 
- Furnish is a simple nd clean ecommerce theme built for a fictional furniture business.
+ Furnish is a simple and clean ecommerce theme built for a fictional furniture business.
  
  The project is built using HTML, CSS and Javascript.
  
