@@ -428,15 +428,6 @@ footer img {
     color: var(--primary-color);
 }
 
-.copyright {
-    text-align: center;
-    color: #4c4c43;
-}
-
-.copyright a {
-    padding: .2rem 0;
-    border-bottom: 1px solid #555;
-}
 /*                        SHOP PAGE                        */
 
 .row-2 {
