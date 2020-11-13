@@ -15,5 +15,7 @@
  5. Contact
 
  And Individual Page For Each Product
+
+ The about and contact pages are not yet built.
  
- Link to the website: https://abdulsamadayoade.github.io/Furnish
+ Link URL = https://abdulsamadayoade.github.io/Furnish
