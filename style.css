@@ -571,6 +571,10 @@ select {
 
 /*                          ACCOUNT PAGE                       */
 
+footer.bg-white {
+    background-color: #fff;
+}
+
 .account {
     padding: 5rem 0;
     background-color: #f2f0f1;
