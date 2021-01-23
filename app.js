@@ -7,6 +7,15 @@ myMenu.addEventListener('click', () => {
     myList.classList.toggle('show');
 });
 
+// CLOSE THE NAV WHEN NAVLNKS ARE CLICKED
+let navLinks = document.querySelectorAll('.nav-list a');
+
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+        myList.classList.remove('show');
+    })
+})
+
 // LOGIN AND SIGN UP FORM SLIDER
 var LoginForm = document.getElementById("LoginForm");
 var RegForm = document.getElementById("RegForm");
